@@ -10,7 +10,7 @@ beo, lch, rch, ldf, lpf, rdf, rpf = 0, 0, 0, 0, 0, 0, 0
 
 def mainlch():
     name = "S"+Subject+"R"+str(Run)+Tipo+LCH
-    im = cv2.imread('D:/FIEC/F_BLOG/GITHUB/OpenBCI/Imagenes/LCH.jpg')
+    im = cv2.imread('C:/Users/Daniel Montoya/Documents/SistemasEmbebidos/Git/Imagenes/LCH.jpg')
     cv2.namedWindow('Image', cv2.WINDOW_NORMAL)
     cv2.setWindowProperty('Image', cv2.WND_PROP_FULLSCREEN, cv2.WINDOW_FULLSCREEN)
     cv2.imshow("Image", im)
@@ -22,7 +22,7 @@ def mainlch():
         if len(DatosLCH) == 500:
             cv2.waitKey(1)
             df = pd.DataFrame(DatosLCH)
-            df.to_csv("D:/FIEC/F_BLOG/GITHUB/OpenBCI/Recoleccion/" + name + "_" +
+            df.to_csv("C:/Users/Daniel Montoya/Documents/SistemasEmbebidos/Git/Recoleccion/" + name + "_" +
                       str(lch) + '.csv')
             DatosLCH.clear()
             break
@@ -30,7 +30,7 @@ def mainlch():
 
 def mainrch():
     name = "S"+Subject+"R"+str(Run)+Tipo+RCH
-    im = cv2.imread('D:/FIEC/F_BLOG/GITHUB/OpenBCI/Imagenes/RCH.jpg')
+    im = cv2.imread('C:/Users/Daniel Montoya/Documents/SistemasEmbebidos/Git/Imagenes/RCH.jpg')
     cv2.namedWindow('Image', cv2.WINDOW_NORMAL)
     cv2.setWindowProperty('Image', cv2.WND_PROP_FULLSCREEN, cv2.WINDOW_FULLSCREEN)
     cv2.imshow("Image", im)
@@ -50,7 +50,7 @@ def mainrch():
 
 def mainldf():
     name = "S"+Subject+"R"+str(Run)+Tipo+LDF
-    im = cv2.imread('D:/FIEC/F_BLOG/GITHUB/OpenBCI/Imagenes/LDF.jpg')
+    im = cv2.imread('C:/Users/Daniel Montoya/Documents/SistemasEmbebidos/Git/Imagenes/LDF.jpg')
     cv2.namedWindow('Image', cv2.WINDOW_NORMAL)
     cv2.setWindowProperty('Image', cv2.WND_PROP_FULLSCREEN, cv2.WINDOW_FULLSCREEN)
     cv2.imshow("Image", im)
@@ -70,7 +70,7 @@ def mainldf():
 
 def mainlpf():
     name = "S"+Subject+"R"+str(Run)+Tipo+LPF
-    im = cv2.imread('D:/FIEC/F_BLOG/GITHUB/OpenBCI/Imagenes/LPF.jpg')
+    im = cv2.imread('C:/Users/Daniel Montoya/Documents/SistemasEmbebidos/Git/Imagenes/LPF.jpg')
     cv2.namedWindow('Image', cv2.WINDOW_NORMAL)
     cv2.setWindowProperty('Image', cv2.WND_PROP_FULLSCREEN, cv2.WINDOW_FULLSCREEN)
     cv2.imshow("Image", im)
@@ -90,7 +90,7 @@ def mainlpf():
 
 def mainrdf():
     name = "S"+Subject+"R"+str(Run)+Tipo+RDF
-    im = cv2.imread('D:/FIEC/F_BLOG/GITHUB/OpenBCI/Imagenes/RDF.jpg')
+    im = cv2.imread('C:/Users/Daniel Montoya/Documents/SistemasEmbebidos/Git/Imagenes/RDF.jpg')
     cv2.namedWindow('Image', cv2.WINDOW_NORMAL)
     cv2.setWindowProperty('Image', cv2.WND_PROP_FULLSCREEN, cv2.WINDOW_FULLSCREEN)
     cv2.imshow("Image", im)
@@ -110,7 +110,7 @@ def mainrdf():
 
 def mainrpf():
     name = "S"+Subject+"R"+str(Run)+Tipo+RPF
-    im = cv2.imread('D:/FIEC/F_BLOG/GITHUB/OpenBCI/Imagenes/RPF.jpg')
+    im = cv2.imread('C:/Users/Daniel Montoya/Documents/SistemasEmbebidos/Git/Imagenes/RPF.jpg')
     cv2.namedWindow('Image', cv2.WINDOW_NORMAL)
     cv2.setWindowProperty('Image', cv2.WND_PROP_FULLSCREEN, cv2.WINDOW_FULLSCREEN)
     cv2.imshow("Image", im)
@@ -130,7 +130,7 @@ def mainrpf():
 
 def mainbeo():
     name = "S"+Subject+"R"+str(Run)+Tipo+BEO
-    im = cv2.imread('D:/FIEC/F_BLOG/GITHUB/OpenBCI/Imagenes/Baseline.jpg')
+    im = cv2.imread('C:/Users/Daniel Montoya/Documents/SistemasEmbebidos/Git/Imagenes/Baseline.jpg')
     cv2.namedWindow('Image', cv2.WINDOW_NORMAL)
     cv2.setWindowProperty('Image', cv2.WND_PROP_FULLSCREEN, cv2.WINDOW_FULLSCREEN)
     cv2.imshow("Image", im)
