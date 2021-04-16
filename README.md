@@ -6,6 +6,10 @@ EEG signals collected using OpenBCI, during the execution of motor activities, m
 - git clone https://github.com/vasanza/OpenBCI.git
 
 # SWITCHED TO BRANCH
+- git branch
+- git checkout NameBranch
+
+# New Branch
 - git checkout -b NameBranch
 
 # PUSH
