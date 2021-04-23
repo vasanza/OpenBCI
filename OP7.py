@@ -3,22 +3,24 @@ from pylsl import StreamInlet, resolve_stream
 import pandas as pd
 import random
 
+# Declaracion de variables
 DatosBEO, DatosLCH, DatosRCH, DatosLDF, DatosLPF, DatosRDF, DatosRPF = [], [], [], [], [], [], []
 BEO, LCH, RCH, LDF, LPF, RDF, RPF = "1", "2", "3", "4", "5", "6", "7"
 beo, lch, rch, ldf, lpf, rdf, rpf = 0, 0, 0, 0, 0, 0, 0
 
+# Declaracion de funciones 
 
 def mainlch():
-    name = "S"+Subject+"R"+str(Run)+Tipo+LCH
-    im = cv2.imread('D:/FIEC/F_BLOG/GITHUB/OpenBCI/Imagenes/LCH.jpg')
-    cv2.namedWindow('Image', cv2.WINDOW_NORMAL)
-    cv2.setWindowProperty('Image', cv2.WND_PROP_FULLSCREEN, cv2.WINDOW_FULLSCREEN)
-    cv2.imshow("Image", im)
+    name = "S"+Subject+"R"+str(Run)+Tipo+LCH  #Nombre con el cual se guarda los archivos csv
+    im = cv2.imread('D:/FIEC/F_BLOG/GITHUB/OpenBCI/Imagenes/LCH.jpg')  #Lectura de la imagen
+    cv2.namedWindow('Image', cv2.WINDOW_NORMAL) #Creacion de la ventana 
+    cv2.setWindowProperty('Image', cv2.WND_PROP_FULLSCREEN, cv2.WINDOW_FULLSCREEN) #Presentacion de la ventana en pantalla completa
+    cv2.imshow("Image", im) #Muestra la imagen
     cv2.waitKey(500)
     inlet = StreamInlet(streams[0])
     while True:
-        sample, t = inlet.pull_sample()
-        DatosLCH.append(sample)
+        sample, t = inlet.pull_sample() #Toma de la muestra
+        DatosLCH.append(sample) #Se agrega a la lista respectiva
         if len(DatosLCH) == 500:
             cv2.waitKey(1)
             df = pd.DataFrame(DatosLCH)
