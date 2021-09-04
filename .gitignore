@@ -1,0 +1,7 @@
+# Files
+#*.data
+Recoleccion/*.mat
+Recoleccion/*.csv
+# Folders
+#data/*.mat
+#Meetings
