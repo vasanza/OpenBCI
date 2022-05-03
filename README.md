@@ -4,18 +4,19 @@
 # OpenBCI
 EEG signals collected using OpenBCI, during the execution of motor activities, motor imaging and motion observation :q!
 
-# CLONE
+# Keynote
+## CLONE
 - git status
 - git clone https://github.com/vasanza/OpenBCI.git
 
-# SWITCHED TO BRANCH
+## SWITCHED TO BRANCH
 - git branch
 - git checkout NameBranch
 
-# New Branch
+## New Branch
 - git checkout -b NameBranch
 
-# PUSH
+## PUSH
 - git status
 - git add .
 - git status
