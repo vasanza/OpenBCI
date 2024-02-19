@@ -7,6 +7,7 @@ New version of data acquisition in folder **"AcquisitionProgram_V2.0"** , with t
 - Method 2 : Using Brainflow (Library)
 
 Note: Check the path of the images and the folder to save the files
+
 ⭐ Explanatory Video of Data Acquisition Codes:
 - https://www.youtube.com/watch?v=h6JpvZ4K_Ik
 
