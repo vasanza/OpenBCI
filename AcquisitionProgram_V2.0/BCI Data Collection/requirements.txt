@@ -24,7 +24,7 @@ opencv-python==4.9.0.80
 packaging==23.2
 pandas==2.2.0
 parso==0.8.3
-pillow==10.3.0
+pillow==12.1.1
 platformdirs==4.2.0
 prompt-toolkit==3.0.43
 psutil==5.9.8
